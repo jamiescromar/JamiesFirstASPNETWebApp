@@ -1,0 +1,25 @@
+﻿body{
+    background-color: lightgray;
+    text-align: center;
+    list-style-position: inside;
+    font-size: 20px
+}
+img{
+    width: 300px;
+    height: auto;
+    outline: 7px solid black;
+}
+input{
+    border-radius: 20px;
+    height: 25px;
+    width: 100px;
+    padding-left: 10px;
+}
+h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:white;
+}
+.mainBody{
+    font-family: Arial;
+}
+
