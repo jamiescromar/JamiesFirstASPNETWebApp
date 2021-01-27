@@ -11,13 +11,16 @@
 <!--First thing we do is match up controller with view-->
 <html>
 <head>
+    <!--Set title equal to the view bage title that has been set-->
     <title>
         @ViewBag.Title;
     </title>
+    <!--Link to Css file and my favicon icon-->
     <link rel="shortcut icon" type="image/x-icon" href="~/img/favicon.ico" />
     <link href="~/css/main.css" rel="stylesheet" />
 </head>
 <body>
+    <!--Header that hold navigation between the different pages, also calls a viewbag-->
     <header>
         <h1>@ViewBag.Header</h1>
         <menu>
@@ -30,6 +33,7 @@
 
     <!--This will allow the other cshtml pages to be inserted right here-->
     @RenderBody()
+    <!--Call Javascript and Node modules for the website-->
     <script src="~/../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="~/js/JavaScript.js"></script>
 </body>
