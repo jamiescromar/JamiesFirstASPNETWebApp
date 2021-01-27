@@ -1,0 +1,35 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "This is my first website";
+}
+<!DOCTYPE html>
+<!--Jamie Cromar-->
+<!--Section 2-->
+<!--First thing we do is match up controller with view-->
+<html>
+<head>
+    <title>
+        @ViewBag.Title;
+    </title>
+    <link rel="shortcut icon" type="image/x-icon" href="~/img/favicon.ico" />
+    <link href="~/css/main.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Jamie Cromar</h1>
+        <menu>
+            <ul>
+                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-controller="Home" asp-action="GradeCalculator">Grade Calculator</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <!--This will allow the other cshtml pages to be inserted right here-->
+    @RenderBody()
+    <script src="~/../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/JavaScript.js"></script>
+</body>
+</html>
