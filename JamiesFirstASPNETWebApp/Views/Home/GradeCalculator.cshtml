@@ -4,30 +4,35 @@
 @{
     ViewBag.Title = "This is my first website";
 }
+
+@model GradeCalculatorModel
+
 <!--Paragraph that will describe what the Calculator will do-->
 <p style="display:inline-block; border-bottom: 3px solid black">Calculate your Final Grade:</p>
 <!--Form that will have inputs for each type of grade type in IS 413-->
-<form>
+<form method="post">
+    <div asp-validation-summary="All"></div>
     <!--Assignments-->
     <label>Assignments:</label>
-    <input id="assignments" />
+    <input id="assignments" asp-for="assignments" />
     <br /><br />
     <!--Group Project-->
     <label>Group Project:</label>
-    <input id="groupProjects" />
+    <input id="groupProjects" asp-for="groupProjects" />
     <br /><br />
     <!--Quizzes-->
     <label>Quizzes:</label>
-    <input id="quizzes" />
+    <input id="quizzes" asp-for="quizzes" />
     <br /><br />
     <!--Exams-->
     <label>Exams:</label>
-    <input id="exams" />
+    <input id="exams" asp-for="exams" />
     <br /><br />
     <!--Intex-->
     <label>INTEX:</label>
-    <input id="intex" />
+    <input id="intex" asp-for="intex" />
     <br /><br />
     <!--Button that will submit the form -->
     <input type="submit" value="Submit" id="submitButton" /><br /><br /><br />
+
 </form>

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using JamiesFirstASPNETWebApp.Models;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,13 @@ namespace JamiesFirstASPNETWebApp.Controllers
             //These will be razors which is  combo of Html and Razor
             return View();
         }
+        [HttpGet("GradeCalculator")]
         public IActionResult GradeCalculator()
+        {
+            return View();
+        }
+        [HttpPost("GradeCalculator")]
+        public IActionResult GradeCalculator(GradeCalculatorModel model)
         {
             return View();
         }

@@ -7,6 +7,7 @@ $("#submitButton").click(function () {
         var exams = $("#exams").val();
         var intex = $("#intex").val();
 
+
         //Assign assignment weights based off the syllabus
         var assignWeight = .5;
         var groupProjectWeight = .1;
@@ -64,7 +65,15 @@ $("#submitButton").click(function () {
             letterGrade = "E";
         }
 
+    if ((assignments > 100 || assignments < 0) || (groupProject > 100 || groupProject < 0) || (quizzes > 100 || quizzes < 0) || (exams > 100 || exams < 0) || (intex > 100 || intex < 0))
+    {
+        alert("please enter your percentages between 0-100, see below for more details");
+    }
+    else
+    {
         //Create an alert that will show the user what the final grade percentage is and the letter grade that they received
         alert("You ended the class with " + finalGrade + "% and recieved a " + letterGrade);
+    }
+
 
     });
