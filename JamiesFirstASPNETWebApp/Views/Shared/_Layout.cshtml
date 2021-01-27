@@ -3,6 +3,7 @@
 *@
 @{
     ViewBag.Title = "This is my first website";
+    ViewBag.Header = "Jamie Cromar";
 }
 <!DOCTYPE html>
 <!--Jamie Cromar-->
@@ -18,7 +19,7 @@
 </head>
 <body>
     <header>
-        <h1>Jamie Cromar</h1>
+        <h1>@ViewBag.Header</h1>
         <menu>
             <ul>
                 <li><a asp-controller="Home" asp-action="Index">Home</a></li>
